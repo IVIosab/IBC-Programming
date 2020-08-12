@@ -24,8 +24,8 @@ int main() {
         cu[r + 1]--;
         //we add one to cu[l] and substitute one to cu[r+1]
     }
-    int knocked = 0; //knocked is used to see if a ball had hit the current bin or not
-    // we use it by adding each element from cu we pass on and if knocked is bigger than zero than the current bin has been knocked
+    int knocked = 0; //knocked is used to see if a ball had hit the current pin or not
+    // we use it by adding each element from cu we pass on and if knocked is bigger than zero than the current pin has been knocked
     for (int i = 1; i <= n; i++) {
         knocked += cu[i];
         if (knocked >= 1) {
