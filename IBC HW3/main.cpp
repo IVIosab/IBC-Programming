@@ -7,14 +7,14 @@ int main() {
 
     int n;
     cin >> n;
-    int bins[n + 2], cu[n + 2];
+    int pins[n + 2], cu[n + 2];
     //cu is used to store the start and end for each ball so we don't need to iterate over each segment and knocking the ball one by one for each ball
     for (int i = 1; i <= n; i++) {
-        bins[i] = 1;
+        pins[i] = 1;
         cu[i] = 0;
     }
-    bins[0] = cu[0] = 0;
-    bins[n + 1] = cu[n + 1] = 0;
+    pins[0] = cu[0] = 0;
+    pins[n + 1] = cu[n + 1] = 0;
     int k;
     cin >> k;
     for (int i = 0; i < k; i++) {
@@ -29,11 +29,11 @@ int main() {
     for (int i = 1; i <= n; i++) {
         knocked += cu[i];
         if (knocked >= 1) {
-            bins[i] = 0;
+            pins[i] = 0;
         }
     }
     for (int i = 1; i <= n; i++) {
-        if (bins[i] == 1) {
+        if (pins[i] == 1) {
             cout << "I";
         } else {
             cout << ".";
