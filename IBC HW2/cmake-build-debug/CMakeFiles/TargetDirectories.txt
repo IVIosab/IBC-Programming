@@ -1,0 +1,3 @@
+C:/Users/mosab/CLionProjects/IBC HW2/cmake-build-debug/CMakeFiles/IBC_HW2.dir
+C:/Users/mosab/CLionProjects/IBC HW2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/mosab/CLionProjects/IBC HW2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
